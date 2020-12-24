@@ -1,0 +1,52 @@
+.header{
+    font-size: 40px;
+    width:50%;
+    font-family: 'Pacifico', cursive;
+    padding:10px;
+    text-align: center;
+}
+#tints{
+    background-color: aqua;
+    height:300px;
+    width:80%;
+    margin:0px auto;
+    overflow: scroll;
+    margin-top: 400px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+
+}
+.content{
+    width:200px;
+    height:280px;
+    display: inline-block;
+    margin-left:20px;
+}
+.tint_imgs{
+    width:100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.content:hover{
+    background-color: cornflowerblue !important;
+    cursor: pointer;
+}
+.btn-danger{
+    width: 90%;
+    font-size: 25px;
+}
+body{
+    background-image: url("background.jpg");
+}
+canvas{
+    animation-name: CANVAS;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+@keyframes CANVAS{
+    from{box-shadow:5px 5px 40px blue};
+    to{box-shadow:5px 5px 40px rgb(0, 225, 255)};
+}

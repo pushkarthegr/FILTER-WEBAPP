@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>FILTER WEBAPP</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1 class="btn btn-info header" onclick="lulism()">Filter Webpage</h1>
+            <hr>
+            <div id="tints">
+                <table>
+                    <tr>
+                        <td><div class="content" style="background-color: blue;" onclick="normalTint()"><img src="normal.png" class="tint_imgs"><hr><p style="color: white;">Normal Tint</p></div></td>
+                        <td><div class="content" style="background-color: rgb(66, 66, 204);" onclick="greenTint()"><img src="green.png" class="tint_imgs"><hr><p style="color: white;">Green Tint</p></div></td>
+                        <td><div class="content" style="background-color: blue;" onclick="redTint()"><img src="red.png" class="tint_imgs"><hr><p style="color: white;">Red Tint</p></div></td>
+                        <td><div class="content" style="background-color: rgb(66, 66, 204);" onclick="yellowTint()"><img src="yellow.png" class="tint_imgs"><hr><p style="color: white;">Yellow Tint</p></div></td>
+                        <td><div class="content" style="background-color: blue;" onclick="cyanTint()"><img src="cyan.png" class="tint_imgs"><hr><p style="color: white;">Cyan Tint</p></div></td>
+                        <td><div class="content" style="background-color: rgb(66, 66, 204);margin-right:20px;" onclick="blueTint()"><img src="blue.png" class="tint_imgs"><hr><p style="color: white;">Blue Tint</p></div></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <div style="background-color: turquoise;width:90%;height:210px">
+                <br>
+                <!-- The event for drop down is onChange -->
+                <div class="col-sm-12 col-lg-6">
+                    <label>FOR LIPS:-</label>
+                    <select class="btn btn-primary" id="nam"><option>No Filter</option><option>Mustache</option><option>Lipstick</option><option>Tongue</option></select>
+                </div>
+                
+                <div class="col-sm-12 col-lg-6">
+                    <label>FOR NOSE:-</label>
+                    <select class="btn btn-primary" id="nak"><option>No Filter</option><option>Dog</option><option>Clown</option><option>Elephant</option></select>
+                </div>
+                <br>
+                <br><br>
+                <div style="margin:0px auto;">
+                    <label>FOR EYES:-</label>
+                    <select class="btn btn-primary" id="nad"><option>No Filter</option><option>SUNGLASSES</option></select>
+                </div>
+                <br><br>
+                <button class="btn btn-danger" onclick="download()">DOWNLOAD</button>
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
